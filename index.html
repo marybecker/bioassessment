@@ -11,10 +11,12 @@
 <body>
 <div id='map'></div>
 <div id='console'>
-    <h1>CT Bioassessment</h1>
-    <p>Data: <a href=''>Macro-invertebrate Biological Condition Gradient Tiers</a> in CT 1989-2020</p>
+    <h1>Bioassessment Samples in CT 1989 - 2020</h1>
+    <p>Data:  <a href='https://portal.ct.gov/-/media/DEEP/water/water_quality_management/monitoringpubs/Gerritsen-and-Jessup-2007-Calibration-of-the-BCG-for-High-Gradient-Streams-of-CT.pdf' target="_blank">
+        CT DEEP Macro-invertebrate Biological Condition Gradient (BCG) Tiers</a> </p>
     <div class='session'>
-        <h2>BCG Tiers</h2>
+        <h2>BCG Tiers </br>(Excellent to Poor Water Quality)</h2>
+
         <div class='row colors'>
         </div>
         <div class='row labels'>
@@ -28,6 +30,14 @@
             <h2>Year: <label id='active-year'>1989</label></h2>
             <input id='slider' class='row' type='range' min='1989' max='2020' step='1' value='1989' />
         </div>
+
+        <div class = circles>
+            <div class="outercircle"> 20
+                <div class="innercircle"> 1</div>
+            </div>
+            <h2>Number of Sample Years</h2>
+        </div>
+
 
     </div>
 

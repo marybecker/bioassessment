@@ -9,7 +9,7 @@ Biological Condition Gradient Metrics Macro-invertebrate data collected by the C
 Data Processing:
 
 ```command
-$ csv2geojson --lat 'YLAT' --lon 'XLONG' Bug_BCG_121221.csv > BugBCG.geojson
+$ csv2geojson --lat 'YLAT' --lon 'XLONG' --numeric-fields BCG,YCNT Bug_BCG_121721.csv > BugBCG.geojson
 
 $ ogrinfo -so BugBCG.geojson BugBCG
 
@@ -44,3 +44,4 @@ Mapbox References:
 Tutorial:  https://docs.mapbox.com/help/tutorials/show-changes-over-time/
 Expressions: https://docs.mapbox.com/mapbox-gl-js/style-spec/expressions/
 Style Circles:  https://docs.mapbox.com/mapbox-gl-js/example/data-driven-circle-colors/
+Add Raster Source:  https://docs.mapbox.com/mapbox-gl-js/example/map-tiles/
